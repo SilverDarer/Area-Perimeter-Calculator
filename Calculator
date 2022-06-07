@@ -1,0 +1,44 @@
+print("Welcome to the calculator!!!")
+print("1)Circle\n2)Triangle\n3)Square\n4)Rectangle")
+shape = int(input("Choose your shape: "))
+print("1)Area\n2)Perimeter")
+op = int(input("Choose you operation: "))
+if shape == 1:
+    r = int(input("Choose your radius: "))
+    if op == 1:
+        print(3.14 * r ** 2)
+    elif op == 2:
+        print(2 * 3.14 * r)
+    else:
+        print("Error")
+elif shape == 2:
+    if op == 1:
+        b = int(input("Base: "))
+        h = int(input("Height: "))
+        print(0.5 * b * h)
+    elif op == 2:
+        a = int(input("Side 1: "))
+        b = int(input("Side 2: "))
+        c = int(input("Side 3: "))
+        print(a + b + c)
+    else:
+        print("Error")
+elif shape == 3:
+    a = int(input("Length of side: "))
+    if op == 1:
+        print(a ** 2)
+    elif op == 2:
+        print(4 * a)
+    else:
+        print("Error")
+elif shape == 4:
+    l = int(input("Length of side: "))
+    w = int(input("Width of side: "))
+    if op == 1:
+        print(l * w)
+    elif op == 2:
+        print(2 * (l + w))
+    else:
+        print("Error")
+else:
+    print("Error")
